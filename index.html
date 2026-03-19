@@ -9,36 +9,51 @@
   <body bgcolor="#f5f5f5">
     <h1 align="center">Fashion Catalog</h1>
 
-    <p><b>Welcome</b> to my fashion catalog website</p>
-    <p><i>Discover</i> the latest trends in dresses, shoes and accessories</p>
+    <!-- Paragraphs -->
+    <p><b>Welcome</b> to my fashion catalog website.</p>
+    <p><i>Discover</i> the latest trends in dresses, shoes, and accessories.</p>
     <p id="section1">
-      Our mission is to provide high-quality fashion items for every season
+      Our mission is to provide high-quality fashion items for every season.
     </p>
 
+    <!-- Links -->
     <a href="dresses.html" style="color: blue">Go to Dresses Page</a><br />
-    <a href="#tableSection" style="color: green">Jump to Table Section</a><br />
     <a href="shoes.html#shoes" style="color: red">Go to Shoes Section</a><br />
-    <a href="https://www.vogue.com" target="_blank" style="color: purple"
+    <a href="accessories.html#accessories" style="color: purple"
+      >Go to Accessories Section</a
+    ><br />
+    <a href="https://www.vogue.com" target="_blank" style="color: brown"
       >Visit Vogue Website</a
-    >
+    ><br />
+    <a href="#tableSection" style="color: green">Go to Table Section</a>
 
     <hr />
 
+    <!-- Images -->
     <h2>Images</h2>
 
-    <!-- Normal size -->
-    <img src="images/dresses.webp" width="200" height="300" />
-
-    <!-- Double size -->
-    <img src="images/shoes.jpg" width="400" height="600" />
-
-    <!-- Half size -->
-    <img src="images/accessories.webp" width="100" height="150" />
-
-    <!-- Clickable image -->
+    <img
+      src="images/dresses.webp"
+      width="200"
+      style="height: auto; object-fit: cover"
+    />
+    <img
+      src="images/shoes.jpg"
+      width="400"
+      style="height: auto; object-fit: cover"
+    />
+    <img
+      src="images/accessories.webp"
+      width="100"
+      style="height: auto; object-fit: cover"
+    />
     <br /><br />
     <a href="images/vogue.jpg" target="_blank">
-      <img src="images/vogue.jpg" width="200" height="300" />
+      <img
+        src="images/vogue.jpg"
+        width="200"
+        style="height: auto; object-fit: cover"
+      />
     </a>
 
     <hr />
@@ -62,42 +77,46 @@
 
     <h3>Definition List</h3>
     <dl>
-      <dt>Dress</dt>
+      <dt>Dresses</dt>
       <dd>Elegant clothing item for women</dd>
       <dt>Shoes</dt>
       <dd>Fashionable heels</dd>
+      <dt>Accessories</dt>
+      <dd>Stylish necklaces and bracelets</dd>
     </dl>
 
     <hr />
 
-    <!-- Simple Table 3x4 -->
+    <!-- Simple Table -->
     <h2 id="tableSection">Fashion Table</h2>
     <table border="1" cellpadding="10" cellspacing="5">
       <caption>
         <b>Fashion Items Overview</b>
       </caption>
-
       <tr bgcolor="#cccccc">
         <th>Dresses</th>
         <th>Shoes</th>
         <th>Accessories</th>
         <th>Home</th>
       </tr>
-
       <tr>
-        <td><img src="images/dress1.webp" width="100" /></td>
-        <td><img src="images/heels.webp" width="100" /></td>
-        <td><img src="images/earrings.webp" width="100" /></td>
-        <td><img src="images/vogue.jpg" width="100" /></td>
+        <td>
+          <img src="images/dress1.webp" width="100" style="height: auto" />
+        </td>
+        <td>
+          <img src="images/heels.webp" width="100" style="height: auto" />
+        </td>
+        <td>
+          <img src="images/earrings.webp" width="100" style="height: auto" />
+        </td>
+        <td><img src="images/vogue.jpg" width="100" style="height: auto" /></td>
       </tr>
-
       <tr>
         <td><a href="dresses.html">More Dresses</a></td>
         <td><a href="shoes.html">More Shoes</a></td>
         <td><a href="accessories.html">More Accessories</a></td>
         <td><a href="index.html">Back to Home</a></td>
       </tr>
-
       <tr>
         <td>Elegant evening dresses</td>
         <td>Beautiful heels</td>
@@ -110,25 +129,40 @@
 
     <!-- Complex Table -->
     <h2>Complex Table</h2>
-
-    <table border="1" cellpadding="15" cellspacing="8">
+    <table border="1" cellpadding="10" cellspacing="5">
       <colgroup>
         <col span="2" style="background-color: #eeeeee" />
         <col style="background-color: #dddddd" />
       </colgroup>
-
       <tr align="center">
-        <th colspan="2">Dresses</th>
+        <th colspan="2">Dresses & Accessories</th>
         <th rowspan="2">Shoes</th>
       </tr>
 
       <tr align="left">
-        <td>Summer</td>
-        <td>Winter</td>
+        <td>Dresses Collection</td>
+        <td>Accessories Collection</td>
       </tr>
-
-      <tr align="right">
-        <td colspan="3">Accessories Section</td>
+      <tr>
+        <td>
+          <img src="images/dress1.webp" width="150" style="height: auto" />
+        </td>
+        <td>
+          <img src="images/earrings.webp" width="150" style="height: auto" />
+        </td>
+        <td>
+          <img src="images/heels.webp" width="120" style="height: auto" />
+        </td>
+      </tr>
+      <tr>
+        <td><a href="dresses.html">More Summer Dresses</a></td>
+        <td><a href="accessories.html">More Accessories</a></td>
+        <td><a href="shoes.html">More Shoes</a></td>
+      </tr>
+      <tr>
+        <td>Light summer dress</td>
+        <td>Beautiful bracelets, earrings etc</td>
+        <td>Comfortable heels</td>
       </tr>
     </table>
 
@@ -136,14 +170,12 @@
 
     <!-- Floating iframe -->
     <h2>Fashion News</h2>
-
     <iframe
       src="https://www.vogue.com"
       width="500"
       height="300"
       style="float: right"
     ></iframe>
-
     <p>
       This is a floating frame with fashion news website embedded inside our
       page.
