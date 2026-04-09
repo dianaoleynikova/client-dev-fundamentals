@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Diana Oleynikova" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      a {
+        color: green;
+      }
+    </style>
     <title>Fashion Catalog</title>
   </head>
 
   <body bgcolor="#f5f5f5">
-    <h1 align="center">Fashion Catalog</h1>
+    <h1 id="main-title">Fashion Catalog</h1>
 
     <!-- Paragraphs -->
-    <p><b>Welcome</b> to my fashion catalog website.</p>
+    <p class="highlight"><b>Welcome</b> to my fashion catalog website.</p>
     <p><i>Discover</i> the latest trends in dresses, shoes, and accessories.</p>
     <p id="section1">
       Our mission is to provide high-quality fashion items for every season.
@@ -87,6 +93,22 @@
 
     <hr />
 
+    <h2>Fashion Categories</h2>
+
+    <div class="fashion-section">
+      <p>Main fashion category: Dresses</p>
+
+      <div>
+        <p>Subcategory: Evening Dresses</p>
+      </div>
+    </div>
+
+    <h2>New Collection</h2>
+    <p>Check out our latest arrivals this season.</p>
+    <p>More fashion items coming soon.</p>
+
+    <hr />
+
     <!-- Simple Table -->
     <h2 id="tableSection">Fashion Table</h2>
     <table border="1" cellpadding="10" cellspacing="5">
@@ -140,8 +162,7 @@
       </tr>
 
       <tr align="left">
-        <td>Dresses Collection</td>
-        <td>Accessories Collection</td>
+        <td colspan="2">Dresses Collection & Accessories Collection</td>
       </tr>
       <tr>
         <td>
